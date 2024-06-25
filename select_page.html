@@ -1,0 +1,72 @@
+<!-- Creates the page -->
+<!DOCTYPE html>
+    <!-- Sets language to english-->
+    <html lang="en">
+        <head>
+            <!-- Indicates character set and special characters -->
+            <meta charset="utf-8"/>
+
+            <!-- Displays the title in the tab -->
+            <title>Molecule Viewer</title>
+
+            <!-- Connect External CSS -->
+            <link rel="stylesheet" type="text/css" href="style.css"/>
+            
+            <!-- Connect Java Script -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+            <script src="script.js"></script>
+        </head>
+
+        <body>
+            <!-- Introduction -->
+            <a class="title" id="title" href="home_page.html" style="color:#CED2EF;">Molecule Viewer</a>
+            <h2 class="subtitle">CIS*2750: Assignment 4</h1>
+
+            <!-- The menu that holds the method options -->
+            <ul class="mainMenu">
+                <a href="upload_page.html">Upload Molecules</a>
+                <a href="addremove_page.html">Modify Elements</a>
+                <label id="chosenTab">Select Molecules</label>
+                <a href="display_page.html">Display Molecules</a>
+            </ul>
+
+            <!-- Select a Molecule Section (3) -->
+            <h2 class="instructions">Select a Molecule</h2>
+            <h3 class="instructions">How to Use</h3>
+            <p class="instructions">
+                Here we'll see a list of molecules that we've uploaded. 
+                <br><br>Select one of these molecules to display them next!
+            </p>
+            <br>
+            <a id="previousButton" href="addremove_page.html"><<</a>
+            <a id="nextButton" href="display_page.html">>></a>
+            <br>
+
+            <br><hr>
+
+            <br><h2 class="instructions">Molecule Selector</h2>
+            <label class="instructions">Please select which molecule to display:</label>
+
+            <div style="text-align: center;">
+                <br><br><select id="moleculeList" size="10"></select>
+
+                <br><br><br><h2>Currently Selected Molecule</h2>
+                <label id="status3"> </label>
+                <br><br><b><label>Number of Atoms: </label></b>
+                <label id="status2"> </label>
+                <br><br><b><label>Number of Bonds: </label></b>
+                <label id="status1"> </label>
+
+                <br><br><br><br><button id="selectButton">Confirm Selection</button>
+                <br><br><label id="status6" style="text-shadow: none;"> </label>
+            </div>
+
+            <!-- Allows the user to go to the top of the page for convienence-->
+            <br><br><hr><br>
+            <div style="text-align: center;">
+                <a id="bottomButton" href="#title">Go Back to the Top</a>
+            </div>
+            <br>
+            
+        </body>
+    </html>

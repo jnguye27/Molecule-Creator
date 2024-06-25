@@ -1,0 +1,92 @@
+<!-- Creates the page -->
+<!DOCTYPE html>
+    <!-- Sets language to english-->
+    <html lang="en">
+        <head>
+            <!-- Indicates character set and special characters -->
+            <meta charset="utf-8"/>
+
+            <!-- Displays the title in the tab -->
+            <title>Molecule Viewer</title>
+
+            <!-- Connect External CSS -->
+            <link rel="stylesheet" type="text/css" href="style.css"/>
+            
+            <!-- Connect Java Script -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+            <script src="script.js"></script>
+        </head>
+
+        <body>
+            <!-- Introduction -->
+            <a class="title" id="title" href="home_page.html" style="color:#CED2EF;">Molecule Viewer</a>
+            <h2 class="subtitle">CIS*2750: Assignment 4</h1>
+
+            <!-- The menu that holds the method options -->
+            <ul class="mainMenu">
+                <a href="upload_page.html">Upload Molecules</a>
+                <label id="chosenTab">Modify Elements</label>
+                <a href="select_page.html">Select Molecules</a>
+                <a href="display_page.html">Display Molecules</a>
+            </ul>
+
+            <!-- Add or Remove Elements Section (1) -->
+            <h2 class="instructions">Modify Elements</h2>
+            <h3 class="instructions">How to Use</h3>
+            <p class="instructions">
+                Here we'll customize the elements that are in our molecules by specifying their number, code, name, 3 hex-colour values, and radius!
+                <br><br>* No duplicate element numbers, codes, and / or names are allowed.
+            </p>
+            <br>
+            <a id="previousButton" href="upload_page.html"><<</a>
+            <a id="nextButton" href="select_page.html">>></a>
+            <br>
+            
+            <br><hr>
+            
+            <!-- Add Elements Here -->
+            <br><h2 class="instructions">Element Adder</h2>
+            <label class="instructions">Fill in all required boxes below before clicking "Add Element"</label>
+            <br><label class="instructions">Example input: 1 H Hydrogen FFFFFF 050505 020202 25</label>
+
+            <div style="text-align: center;">
+                <br><br><label>Element Number: </label>
+                <br><input type="text" id="elementNum"/>
+
+                <br><br><label>Element Code: </label>
+                <br><input type="text" id="elementCode"/>
+
+                <br><br><label>Element Name: </label>
+                <br><input type="text" id="elementName"/>
+
+                <br><br><label>3 Hex-Colour Values: </label>
+                <br><input type="text" id="colourOne"/>
+                <br><input type="text" id="colourTwo"/>
+                <br><input type="text" id="colourThree"/>
+
+                <br><br><label>Radius (20 - 45): </label>
+                <br><input type="text" id="radius"/>
+                
+                <br><br><br><button id="addButton">Add Element</button>
+                <br><br><label style="text-shadow: none;" id="status4"> </label>
+            </div>
+
+            <br><br><hr>
+            
+            <!-- Remove Elements Here -->
+            <div style="text-align: center;">
+                <br><h2>Element Remover</h2>
+                <label>Select an element to remove it</label>
+                <br><br><select id="elementList" size="10"></select>
+                <br><br><button id="removeButton">Remove Element</button>
+            </div>
+
+            <!-- Allows the user to go to the top of the page for convienence-->
+            <br><br><hr><br>
+            <div style="text-align: center;">
+                <a id="bottomButton" href="#title">Go Back to the Top</a>
+            </div>
+            <br>
+
+        </body>
+    </html>

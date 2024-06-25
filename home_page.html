@@ -1,0 +1,47 @@
+<!-- Creates the page -->
+<!DOCTYPE html>
+    <!-- Sets language to english-->
+    <html lang="en">
+        <head>
+            <!-- Indicates character set and special characters -->
+            <meta charset="utf-8"/>
+
+            <!-- Displays the title in the tab -->
+            <title>Molecule Viewer</title>
+
+            <!-- Connect External CSS -->
+            <link rel="stylesheet" type="text/css" href="style.css"/>
+            
+            <!-- Connect Java Script -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+            <script src="script.js"></script>
+        </head>
+
+        <body>
+            <br>
+            <!-- Introduction -->
+            <a class="title" id="title" href="home_page.html" style="color:#CED2EF;">Welcome to Molecule Viewer</a>
+            <h2 class="subtitle">CIS*2750: Assignment 4</h1>
+
+            <!-- The menu that holds the method options -->
+            <ul class="mainMenu">
+                <a href="upload_page.html">Upload Molecules</a>
+                <a href="addremove_page.html">Modify Elements</a>
+                <a href="select_page.html">Select Molecules</a>
+                <a href="display_page.html">Display Molecules</a>
+            </ul>
+            
+            <!-- About Me -->
+            <p class="description">
+                <b>Molecule Viewer</b> is a place where you can upload, manipulate, and display a molecule of your choosing!
+                <br><br>It's as simple as 4 steps: Upload, Modify, Select, and Display!
+            </p>
+
+            <!-- Start Button -->
+            <br><a id="startButton" href="upload_page.html">Start Now</a>
+
+            <br><br><br><hr>
+            <p id="copyright">2023 Copyright: MoleculeViewer.com</p>
+
+        </body>
+    </html>

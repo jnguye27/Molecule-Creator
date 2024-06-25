@@ -1,0 +1,60 @@
+<!-- Creates the page -->
+<!DOCTYPE html>
+    <!-- Sets language to english-->
+    <html lang="en">
+        <head>
+            <!-- Indicates character set and special characters -->
+            <meta charset="utf-8"/>
+
+            <!-- Displays the title in the tab -->
+            <title>Molecule Viewer</title>
+
+            <!-- Connect External CSS -->
+            <link rel="stylesheet" type="text/css" href="style.css"/>
+            
+            <!-- Connect Java Script -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+            <script src="script.js"></script>
+        </head>
+
+        <body>
+            <!-- Introduction -->
+            <a class="title" id="title" href="home_page.html" style="color:#CED2EF;">Molecule Viewer</a>
+            <h2 class="subtitle">CIS*2750: Assignment 4</h1>
+
+            <!-- The menu that holds the method options -->
+            <ul class="mainMenu">
+                <a href="upload_page.html">Upload Molecules</a>
+                <a href="addremove_page.html">Modify Elements</a>
+                <a href="select_page.html">Select Molecules</a>
+                <label id="chosenTab">Display Molecules</label>
+            </ul>
+
+            <!-- Display a Molecule Section (4) -->
+            <h2 class="instructions">Display a Molecule</h2>
+            <h3 class="instructions">How to Use</h3>
+            <p class="instructions">
+                Here we'll see the molecule that we've selected, press "View My Molecule" to display!
+            </p>
+            <br>
+            <a id="previousButton" href="select_page.html"><<</a>
+            <br>
+            
+            <br><hr><br>
+
+            <div style="text-align: center; margin-left: -0.5%;">
+                <button id="displayButton">View My Molecule</button>
+                <br><br><label style="text-shadow: none;" id="status7"> </label>
+                <br><br><div id="displayMolecule"></div>
+            </div>
+
+            
+            <!-- Allows the user to go to the top of the page for convienence-->
+            <br><br><hr><br>
+            <div style="text-align: center;">
+                <a id="bottomButton" href="#title">Go Back to the Top</a>
+            </div>
+            <br>
+
+        </body>
+    </html>
